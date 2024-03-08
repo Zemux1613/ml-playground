@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Bio <= 4.5\nsquared_error = 8.614\nsamples = 7\nvalue = 5.157", fillcolor="#f3c5a4"] ;
+1 [label="Bio <= 3.0\nsquared_error = 1.975\nsamples = 4\nvalue = 2.9", fillcolor="#fae6d8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Informatik <= 1.0\nsquared_error = 0.482\nsamples = 3\nvalue = 2.167", fillcolor="#fcf1e9"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.0\nsamples = 1\nvalue = 1.2", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="Informatik <= 3.0\nsquared_error = 0.022\nsamples = 2\nvalue = 2.65", fillcolor="#fbeade"] ;
+2 -> 4 ;
+5 [label="squared_error = 0.0\nsamples = 1\nvalue = 2.5", fillcolor="#fbece1"] ;
+4 -> 5 ;
+6 [label="squared_error = 0.0\nsamples = 1\nvalue = 2.8", fillcolor="#fae8da"] ;
+4 -> 6 ;
+7 [label="squared_error = -0.0\nsamples = 1\nvalue = 5.1", fillcolor="#f3c6a5"] ;
+1 -> 7 ;
+8 [label="Informatik <= 6.5\nsquared_error = 1.616\nsamples = 3\nvalue = 8.167", fillcolor="#ea995f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Bio <= 5.5\nsquared_error = 0.423\nsamples = 2\nvalue = 7.35", fillcolor="#eca571"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.0\nsamples = 1\nvalue = 6.7", fillcolor="#eeae80"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.0\nsamples = 1\nvalue = 8.0", fillcolor="#ea9b62"] ;
+9 -> 11 ;
+12 [label="squared_error = -0.0\nsamples = 1\nvalue = 9.8", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
